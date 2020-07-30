@@ -325,7 +325,7 @@ export default Component => {
                   }
                 }
 
-                this.reorder.push({ a: dropIndex, b: this.dragged })
+               // this.reorder.push({ a: dropIndex, b: this.dragged })
 
                 if (onDropSuccess) {
                   const containerOffset = DomHelper.getOffset(this.containerRef.current)
@@ -354,7 +354,7 @@ export default Component => {
                 this.setState({ trigger: Math.random(), firstLoad: false })
               }
             } else if (mode === DragMode.SWAP) {
-              this.reorder.push({ a: i, b: this.dragged })
+              //this.reorder.push({ a: i, b: this.dragged })
 
               if (onDropSuccess) {
                 // (draggedColumn, targetColumn, oldIndex, newIndex)
